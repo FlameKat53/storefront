@@ -1,5 +1,7 @@
 {
     "storeInfo": {
+        "url": "https://raw.githubusercontent.com/FlameKat53/storefront/master/json/storefront.unistore",
+        "file": "storefront.unistore",
         "title": "Storefront Test",
         "author": "FlameKat53",
         "shortDesc": "",
