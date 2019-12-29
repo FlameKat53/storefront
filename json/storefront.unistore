@@ -2,8 +2,6 @@
 	"storeInfo": {
 		"url": "https://raw.githubusercontent.com/FlameKat53/storefront/master/json/storefront.unistore",
 		"file": "sdmc:/3ds/Universal-Updater/stores/storefront.unistore",
-		"sheet": "",
-		"sheetURL": "",
 		"title": "Storefront Test",
 		"author": "FlameKat53",
 		"description": "",
