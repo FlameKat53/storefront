@@ -1,2 +1,2 @@
 # storefront
-My storefront for Universal-Updater
+My UniStore for Universal-Updater

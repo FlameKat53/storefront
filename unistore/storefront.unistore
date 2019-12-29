@@ -1,6 +1,6 @@
 {
 	"storeInfo": {
-		"url": "https://github.com/FlameKat53/storefront/raw/master/json/storefront.unistore",
+		"url": "https://github.com/FlameKat53/storefront/raw/master/unistore/storefront.unistore",
 		"file": "sdmc:/3ds/Universal-Updater/stores/storefront.unistore",
 		"title": "Storefront",
 		"author": "FlameKat53",
