@@ -1,62 +1,62 @@
 {
-    "storeInfo": {
-        "url": "https://raw.githubusercontent.com/FlameKat53/storefront/master/json/storefront.unistore",
-        "file": "storefront.unistore",
-        "title": "Storefront Test",
-        "author": "FlameKat53",
-        "shortDesc": "",
-        "description": "",
-        "barColor": "#395472",
-        "bgBottomColor": "#262C4D",
-        "bgTopColor": "#60A8C0",
-        "textColor": "#FFFFFF",
-        "selectedColor": "#78C0D8",
-        "unselectedColor": "#4D7684",
-        "version": 3,
-        "revision": 0
-    },
-    "Universal-Updater": {
-        "info": {
-            "version": "2.1.0",
-            "author": "Universal-Team",
-            "description": "A Universally Great Updater!",
-            "fileSize": 0
-        },
-        "script": [{
-            "type": "downloadFile",
-            "file": "https:\/\/flamekat53.github.io\/cia\/Universal-Updater.cia",
-            "output": "sdmc:\/Universal-Updater.cia",
-            "message": "Downloading CIA..."
-        }, {
-            "type": "installCia",
-            "file": "sdmc:\/Universal-Updater.cia",
-            "message": "Installing CIA..."
-        }, {
-            "type": "deleteFile",
-            "file": "sdmc:\/Universal-Updater.cia",
-            "message": "Deleting downloaded CIA file..."
-        }]
-    },
-    "Universal-Updater-2.0.0": {
-        "info": {
-            "version": "2.0.0",
-            "author": "Universal-Team",
-            "description": "A Universally Great Updater!",
-            "fileSize": 0
-        },
-        "script": [{
-            "type": "downloadFile",
-            "file": "https:\/\/flamekat53.github.io\/cia\/Universal-Updater-2.0.0.cia",
-            "output": "sdmc:\/Universal-Updater-2.0.0.cia",
-            "message": "Downloading CIA..."
-        }, {
-            "type": "installCia",
-            "file": "sdmc:\/Universal-Updater-2.0.0.cia",
-            "message": "Installing CIA..."
-        }, {
-            "type": "deleteFile",
-            "file": "sdmc:\/Universal-Updater-2.0.0.cia",
-            "message": "Deleting downloaded CIA file..."
-        }]
-    }
+	"storeInfo": {
+		"url": "https://raw.githubusercontent.com/FlameKat53/storefront/master/json/storefront.unistore",
+		"file": "storefront.unistore",
+		"sheet": "",
+		"sheetURL": "",
+		"title": "Storefront Test",
+		"author": "FlameKat53",
+		"description": "",
+		"barColor": "#395472",
+		"bgBottomColor": "#262C4D",
+		"bgTopColor": "#60A8C0",
+		"textColor": "#FFFFFF",
+		"selectedColor": "#78C0D8",
+		"unselectedColor": "#4D7684",
+		"version": 3
+	},
+	"Universal-Updater": {
+		"info": {
+			"version": "2.1.0",
+			"author": "Universal-Team",
+			"description": "A Universally Great Updater!",
+			"fileSize": 0
+		},
+		"script": [{
+			"type": "downloadFile",
+			"file": "https:\/\/flamekat53.github.io\/cia\/Universal-Updater.cia",
+			"output": "sdmc:\/Universal-Updater.cia",
+			"message": "Downloading CIA..."
+		}, {
+			"type": "installCia",
+			"file": "sdmc:\/Universal-Updater.cia",
+			"message": "Installing CIA..."
+		}, {
+			"type": "deleteFile",
+			"file": "sdmc:\/Universal-Updater.cia",
+			"message": "Deleting downloaded CIA file..."
+		}]
+	},
+	"Universal-Updater-2.0.0": {
+		"info": {
+			"version": "2.0.0",
+			"author": "Universal-Team",
+			"description": "A Universally Great Updater!",
+			"fileSize": 0
+		},
+		"script": [{
+			"type": "downloadFile",
+			"file": "https:\/\/flamekat53.github.io\/cia\/Universal-Updater-2.0.0.cia",
+			"output": "sdmc:\/Universal-Updater-2.0.0.cia",
+			"message": "Downloading CIA..."
+		}, {
+			"type": "installCia",
+			"file": "sdmc:\/Universal-Updater-2.0.0.cia",
+			"message": "Installing CIA..."
+		}, {
+			"type": "deleteFile",
+			"file": "sdmc:\/Universal-Updater-2.0.0.cia",
+			"message": "Deleting downloaded CIA file..."
+		}]
+	}
 }
