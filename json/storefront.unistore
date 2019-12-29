@@ -2,58 +2,70 @@
 	"storeInfo": {
 		"url": "https://raw.githubusercontent.com/FlameKat53/storefront/master/json/storefront.unistore",
 		"file": "sdmc:/3ds/Universal-Updater/stores/storefront.unistore",
-		"title": "Storefront Test",
+		"title": "Storefront",
 		"author": "FlameKat53",
-		"description": "",
+		"description": "A store",
 		"barColor": "#395472",
 		"bgBottomColor": "#262C4D",
 		"bgTopColor": "#60A8C0",
 		"textColor": "#FFFFFF",
 		"selectedColor": "#78C0D8",
 		"unselectedColor": "#4D7684",
-		"version": 3
+		"version": 4
 	},
-	"Universal-Updater": {
+	"Relaunch": {
 		"info": {
-			"version": "2.1.0",
+			"version": "3.1.1",
 			"author": "Universal-Team",
-			"description": "A Universally Great Updater!",
-			"fileSize": 0
+			"description": "An Unlaunch look-a-like targeted toward flashcard users",
+			"fileSize": 638720
+		},
+        	"script": [{
+            		"type": "downloadFile",
+            		"file": "https://github.com/Universal-Team/Relaunch/releases/download/v3.1.1/Relaunch.7z",
+            		"output": "sdmc:/Relaunch.7z",
+            		"message": "Downloading Relaunch..."
+ 	       }, {
+	           	"type": "extractFile",
+	            	"file": "/Relaunch.7z",
+		    	"input": "Relaunch/_nds/Relaunch/menu.bin",
+	            	"output": "/_nds/Relaunch/menu.bin",
+	           	"message": "Extracting Relaunch... please wait."
+	        }, {
+	            	"type": "extractFile",
+	            	"file": "/Relaunch.7z",
+		    	"input": "Relaunch/Relaunch.cia",
+	            	"output": "/Relaunch.cia",
+	            	"message": "Extracting Relaunch... please wait."
+		}, {
+			"type": "installCia",
+			"file": "sdmc:/Relaunch.cia",
+			"message": "Installing CIA..."
+	        }, {
+            		"type": "deleteFile",
+         	   	"file": "sdmc:/Relaunch.7z",
+         	   	"message": "Deleting unneded file."
+        	}]
+	},
+	"ButtonBoot": {
+		"info": {
+			"version": "2.1.1",
+			"author": "FlameKat53",
+			"description": "DS Homebrew Bootloader",
+			"fileSize": 256840
 		},
 		"script": [{
 			"type": "downloadFile",
-			"file": "https:\/\/flamekat53.github.io\/cia\/Universal-Updater.cia",
-			"output": "sdmc:\/Universal-Updater.cia",
+			"file": "https://github.com/FlameKat53/ButtonBoot/releases/download/v2.1.1/ButtonBoot_3DS.cia",
+			"output": "sdmc:/ButtonBoot_3DS.cia",
 			"message": "Downloading CIA..."
 		}, {
 			"type": "installCia",
-			"file": "sdmc:\/Universal-Updater.cia",
+			"file": "sdmc:/ButtonBoot_3DS.cia",
 			"message": "Installing CIA..."
 		}, {
 			"type": "deleteFile",
-			"file": "sdmc:\/Universal-Updater.cia",
-			"message": "Deleting downloaded CIA file..."
-		}]
-	},
-	"Universal-Updater-2.0.0": {
-		"info": {
-			"version": "2.0.0",
-			"author": "Universal-Team",
-			"description": "A Universally Great Updater!",
-			"fileSize": 0
-		},
-		"script": [{
-			"type": "downloadFile",
-			"file": "https:\/\/flamekat53.github.io\/cia\/Universal-Updater-2.0.0.cia",
-			"output": "sdmc:\/Universal-Updater-2.0.0.cia",
-			"message": "Downloading CIA..."
-		}, {
-			"type": "installCia",
-			"file": "sdmc:\/Universal-Updater-2.0.0.cia",
-			"message": "Installing CIA..."
-		}, {
-			"type": "deleteFile",
-			"file": "sdmc:\/Universal-Updater-2.0.0.cia",
+			"file": "sdmc:/ButtonBoot_3DS.cia",
 			"message": "Deleting downloaded CIA file..."
 		}]
 	}
