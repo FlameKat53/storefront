@@ -13,42 +13,45 @@
 		"unselectedColor": "#4D7684",
 		"version": 4
 	},
-	"Relaunch": {
+	"storeContent": [
+		{
 		"info": {
+			"title": "Relaunch",
 			"version": "3.1.1",
 			"author": "Universal-Team",
 			"description": "An Unlaunch look-a-like targeted toward flashcard users",
 			"fileSize": 638720
 		},
-        	"script": [{
-            		"type": "downloadFile",
-            		"file": "https://github.com/Universal-Team/Relaunch/releases/download/v3.1.1/Relaunch.7z",
-            		"output": "sdmc:/Relaunch.7z",
-            		"message": "Downloading Relaunch..."
- 	       }, {
-	           	"type": "extractFile",
-	            	"file": "/Relaunch.7z",
-		    	"input": "Relaunch/_nds/Relaunch/menu.bin",
-	            	"output": "/_nds/Relaunch/menu.bin",
-	           	"message": "Extracting Relaunch... please wait."
-	        }, {
-	            	"type": "extractFile",
-	            	"file": "/Relaunch.7z",
-		    	"input": "Relaunch/Relaunch.cia",
-	            	"output": "/Relaunch.cia",
-	            	"message": "Extracting Relaunch... please wait."
+		"script": [{
+			"type": "downloadFile",
+			"file": "https://github.com/Universal-Team/Relaunch/releases/download/v3.1.1/Relaunch.7z",
+			"output": "sdmc:/Relaunch.7z",
+			"message": "Downloading Relaunch..."
+		}, {
+			"type": "extractFile",
+			"file": "/Relaunch.7z",
+			"input": "Relaunch/_nds/Relaunch/menu.bin",
+			"output": "/_nds/Relaunch/menu.bin",
+			"message": "Extracting Relaunch... please wait."
+		}, {
+			"type": "extractFile",
+			"file": "/Relaunch.7z",
+			"input": "Relaunch/Relaunch.cia",
+			"output": "/Relaunch.cia",
+			"message": "Extracting Relaunch... please wait."
 		}, {
 			"type": "installCia",
 			"file": "sdmc:/Relaunch.cia",
 			"message": "Installing CIA..."
-	        }, {
-            		"type": "deleteFile",
-         	   	"file": "sdmc:/Relaunch.7z",
-         	   	"message": "Deleting unneded file."
-        	}]
+		}, {
+			"type": "deleteFile",
+			"file": "sdmc:/Relaunch.7z",
+			"message": "Deleting unneded file."
+		}]
 	},
-	"ButtonBoot": {
+	{
 		"info": {
+			"title": "ButtonBoot",
 			"version": "2.1.1",
 			"author": "FlameKat53",
 			"description": "DS Homebrew Bootloader",
@@ -68,5 +71,5 @@
 			"file": "sdmc:/ButtonBoot_3DS.cia",
 			"message": "Deleting downloaded CIA file..."
 		}]
-	}
+	}]
 }
