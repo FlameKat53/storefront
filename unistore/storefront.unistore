@@ -17,14 +17,15 @@
 		{
 		"info": {
 			"title": "Relaunch",
-			"version": "3.1.1",
+			"version": "4.0.0",
 			"author": "Universal-Team",
 			"description": "An Unlaunch look-a-like targeted toward flashcard users",
 			"fileSize": 638720
 		},
 		"script": [{
-			"type": "downloadFile",
-			"file": "https://github.com/Universal-Team/Relaunch/releases/download/v3.1.1/Relaunch.7z",
+			"type": "downloadRelease",
+			"repo": "Universal-Team/Relaunch",
+			"file": "Relaunch.7z",
 			"output": "sdmc:/Relaunch.7z",
 			"message": "Downloading Relaunch..."
 		}, {
@@ -58,8 +59,9 @@
 			"fileSize": 256840
 		},
 		"script": [{
-			"type": "downloadFile",
-			"file": "https://github.com/FlameKat53/ButtonBoot/releases/download/v2.1.1/ButtonBoot_3DS.cia",
+			"type": "downloadRelease",
+			"repo": "FlameKat53/ButtonBoot",
+			"file": "ButtonBoot_3DS.cia",
 			"output": "sdmc:/ButtonBoot_3DS.cia",
 			"message": "Downloading CIA..."
 		}, {
