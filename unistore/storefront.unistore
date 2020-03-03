@@ -53,7 +53,7 @@
 	{
 		"info": {
 			"title": "ButtonBoot",
-			"version": "2.1.1",
+			"version": "3.0.0",
 			"author": "FlameKat53",
 			"description": "DS Homebrew Bootloader",
 			"fileSize": 256840
